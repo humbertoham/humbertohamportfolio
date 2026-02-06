@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { useTranslation } from 'react-i18next';
-import '../i18n'; // i18n sigue activo
+import '../i18n';
 import './globals.css';
 
 import Nav from '@/components/nav';
@@ -23,7 +23,6 @@ export default function RootLayout({
   const [isI18nReady, setIsI18nReady] = useState(false);
 
   useEffect(() => {
-    // Forzamos inglés, sin detección
     const init = async () => {
       await i18n.changeLanguage('en');
       setIsI18nReady(true);
@@ -59,25 +58,47 @@ export default function RootLayout({
 
         <meta
           name="keywords"
-          content="Humberto Ham, Software Engineer, Mathematics, System Design, Web Development, Automation"
+          content="Humberto Ham, Software Engineer, Mathematician, System Design, Web Development, Automation"
         />
 
         <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://humbertohamportfolio.vercel.app/"
+        />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Humberto Ham — Software Engineer & Mathematician" />
+        <meta
+          property="og:title"
+          content="Humberto Ham — Software Engineer & Mathematician"
+        />
         <meta
           property="og:description"
           content="My work is driven by a strong foundation in mathematics, software engineering, and a deep understanding of systems."
         />
+        <meta
+          property="og:url"
+          content="https://humbertohamportfolio.vercel.app/"
+        />
+        <meta
+          property="og:image"
+          content="https://humbertohamportfolio.vercel.app/images/card.png"
+        />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Humberto Ham — Software Engineer & Mathematician" />
+        <meta
+          name="twitter:title"
+          content="Humberto Ham — Software Engineer & Mathematician"
+        />
         <meta
           name="twitter:description"
           content="Building scalable, maintainable, and logically sound software through precision and system thinking."
+        />
+        <meta
+          name="twitter:image"
+          content="https://humbertohamportfolio.vercel.app/images/card.png"
         />
 
         {/* Structured Data */}
@@ -89,6 +110,11 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Humberto Ham",
               "jobTitle": "Software Engineer",
+              "url": "https://humbertohamportfolio.vercel.app",
+              "sameAs": [
+                "https://github.com/humbertoham",
+                "https://www.linkedin.com/in/humbertohamd/"
+              ],
               "description":
                 "Software engineer with a strong foundation in mathematics and system design, focused on long-term reliability and clarity in software."
             }),
