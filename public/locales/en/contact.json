@@ -1,0 +1,17 @@
+{
+    "title": "Get in Touch",
+    "subtitle": "We’d love to hear from you. Reach out to us using the information below.",
+    "emailTitle": "Email Us",
+    "phoneTitle": "Call Us",
+    "locationTitle": "Visit Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Your Message",
+      "submit": "Send Message"
+    }
+  }
+  

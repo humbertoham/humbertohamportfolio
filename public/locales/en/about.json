@@ -1,0 +1,14 @@
+{
+  "banner": {
+    "heading": {
+      "line1": "About",
+      "line2": "Me"
+    },
+    "content": {
+      "intro": "My work is driven by a strong foundation in mathematics, software engineering, and a long-standing curiosity for how systems truly work. Long before formal roles or titles, I developed skills through years of hands-on problem solving, programming, and independent learning.",
+      "paragraph1": "Throughout my experience, I noticed a recurring pattern in the industry: solutions that prioritize speed over understanding often lead to fragile systems and technical debt. This perspective shaped my approach to software—favoring clarity, structure, and long-term reliability over quick fixes.",
+      "paragraph2": "With a background in mathematics and extensive experience in modern web development, automation, and system design, I combine analytical thinking with practical execution. I focus on building solutions that are not only functional, but logically sound, maintainable, and thoughtfully designed.",
+      "paragraph3": "I approach every project with precision, accountability, and a constant drive to improve. My goal is to deeply understand the problem at hand and deliver solutions that are efficient, scalable, and built to last—always balancing technical rigor with real-world impact."
+    }
+  }
+}

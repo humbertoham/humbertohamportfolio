@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../public/fonts/poppins/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../../public/fonts/poppins/poppins-v21-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/lato/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../public/fonts/lato/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
+
+
+  body {
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+    -moz-osx-font-smoothing: grayscale; /* Firefox en macOS */
+    background-color: var(--menta);
+
+
+
+
+  }
+
+:root {
+    --menta: #e9ffdb;
+    --white: #faf4d3;
+    --darkgreen: #172b2d;
+    --green: #004643;
+    --yellow: #d1ac00;
+
+    --yelflow: #d1ab009a;
+    --yellows: #ffd107;
+   
+
+
+
+  }
+  .rc-anchor-light{
+    background-color: var(--white) !important;
+  }
+
+  body {
+    scrollbar-width: thin; /* Solo para navegadores Firefox */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px; /* Anchura de la scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--yellow); /* Color del "thumb" (la barra) */
+    border-radius: 6px;
+  }
+
+ 
+
+  
+  ::-webkit-scrollbar-track {
+    background: var(--yelflow); /* Fondo inicial */
+  }
+
+/* Definición de la animación */
+
+  .pop{
+    font-family: 'Poppins';
+
+
+  }
+ 
+  .lat{
+    font-family:'Lato' ;
+  }
+  .text-darkgreen{
+    color: var(--darkgreen);
+  }
+  .by{
+    border-color: var(--yellow);
+  }
+  .bg-yellow{
+    background-color: var(--yellow);
+  }
+  
+  .bgw{
+    background-color: var(--white);
+  }
+  .bg-darkgreen {
+    background-color: var(--darkgreen);
+  }
+  .text-yellow{
+    color: var(--yellow);
+  }
+  .text-white {
+    color: var(--white) !important;
+    font-family:'Lato' !important;
+    font-weight: 300 !important;
+  }
+  
+  .hover\:text-yellow:hover {
+    color: var(--yellow);
+  }
+  .tw{
+    color: var(--white);
+  }
+  .line{
+    border-color: var(--white);
+  }
+
+.ban{
+
+  
+    background-color: var(--menta);
+
+}
+
+.navB{
+  background-color: var(--menta) !important;
+}
+.navA {
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--darkgreen);
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.learn{
+  font-family:'Lato';
+  font-size: 1.1rem;
+  color: var(--green);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  
+}
+
+.learn:hover{
+  color: var(--darkgreen);
+  text-decoration: underline;
+
+}
+
+.navA:hover {
+  color: var(--darkgreen);
+}
+
+*, ::before, ::after {
+ border-color: var(--darkgreen);
+}
+
+
+.navA::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  transition: width 0.3s ease;
+}
+
+.navA:hover::after {
+  width: 100%;
+}
+
+
+.banh{
+    font-family: 'Poppins';
+    text-align: left;
+    color: var(--darkgreen);
+    font-size: 10rem;
+    font-weight: 900;
+
+}
+.abouth{
+  font-family: 'Poppins';
+  text-align: left;
+  color: var(--white);
+  font-size: 7rem;
+  font-weight: 900;
+
+}
+.dot{
+  color: var(--yellow);
+}
+
+.logo{
+    width: auto;
+    height: 50px;
+}
+
+.nav{
+    background: var(--menta);
+    color: var(--green);
+}
+
+
+/* Para pantallas más pequeñas (por ejemplo, tablets) */
+@media (max-width: 1024px) {
+  .banh {
+      font-size: 6rem;
+  }
+  .abouth{
+    font-size: 5rem;
+    
+  }
+}
+
+/* Para pantallas pequeñas (por ejemplo, móviles) */
+@media (max-width: 768px) {
+  .banh {
+      font-size: 4rem;
+      text-align: left; /* Opcional: cambia alineación en móviles */
+  }
+  .abouth{
+    font-size: 4rem;
+      text-align: left; /* Opcional: cambia alineación en móviles */
+  }
+}
+
+/* globals.css */
+html {
+  scroll-behavior: smooth;
+}
+

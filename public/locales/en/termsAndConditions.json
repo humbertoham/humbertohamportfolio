@@ -1,0 +1,52 @@
+{
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "Welcome to Pink Ponk, a software development and digital solutions company based in Monterrey, Nuevo León, Mexico. These Terms and Conditions govern your access to and use of our digital platforms, software products, and services. By accessing our platforms or using our services, you confirm that you have read, understood, and agree to be bound by these terms. If you do not agree, please refrain from using our services."
+      },
+      {
+        "title": "2. Scope and Application",
+        "content": "These Terms and Conditions apply to all users of Pink Ponk’s digital platforms, software products, and services, including clients, visitors, and any other individuals accessing our content. They form a binding legal agreement between you and Pink Ponk."
+      },
+      {
+        "title": "3. Description of Services",
+        "content": "Pink Ponk offers custom software development, design, implementation, and maintenance services. This includes, but is not limited to, web, mobile, desktop, and enterprise solutions. Detailed project specifications, costs, timelines, and any other pertinent details will be outlined in separate agreements with each client."
+      },
+      {
+        "title": "4. User Responsibilities",
+        "content": "By using our services, you agree to:",
+        "items": [
+          "Provide accurate and up-to-date information during registration and contracting processes.",
+          "Refrain from using our platforms or services for any illegal or unauthorized activities.",
+          "Respect and uphold the intellectual property rights of Pink Ponk and third parties."
+        ]
+      },
+      {
+        "title": "5. Intellectual Property",
+        "content": "All content created by Pink Ponk—including designs, code, documentation, and related materials—is the exclusive property of Pink Ponk and is protected under Mexican copyright laws. Any unauthorized use, reproduction, or distribution of this content is strictly prohibited."
+      },
+      {
+        "title": "6. Limitation of Liability",
+        "content": "To the maximum extent permitted by applicable Mexican law, Pink Ponk shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of our digital platforms, software products, or services. Your use of our services is at your own risk."
+      },
+      {
+        "title": "7. Indemnification",
+        "content": "You agree to indemnify and hold harmless Pink Ponk, its employees, partners, and agents from any claims, demands, or damages—including reasonable legal fees—that arise from your use of our platforms or your breach of these Terms and Conditions."
+      },
+      {
+        "title": "8. Changes to Terms",
+        "content": "Pink Ponk reserves the right to modify these Terms and Conditions at any time. Any changes will become effective immediately upon posting on our digital platforms. It is your responsibility to review these terms periodically. Your continued use of our services after any changes constitutes your acceptance of the updated Terms and Conditions."
+      },
+      {
+        "title": "9. Governing Law and Jurisdiction",
+        "content": "These Terms and Conditions are governed by and construed in accordance with the laws of the United Mexican States. Any disputes arising out of or related to these terms shall be resolved exclusively in the competent courts of Monterrey, Nuevo León."
+      },
+      {
+        "title": "10. Contact",
+        "content": "If you have any questions or concerns regarding these Terms and Conditions, please contact us via email at: <1>contact@pinkponk.dev</1>."
+      }
+    ]
+  }
+}
