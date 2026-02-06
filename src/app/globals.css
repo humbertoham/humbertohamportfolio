@@ -204,6 +204,14 @@
     font-weight: 900;
 
 }
+.logoh{
+    font-family: 'Poppins';
+    text-align: left;
+    color: var(--green);
+    font-size: 2rem;
+    font-weight: 600;
+
+}
 .abouth{
   font-family: 'Poppins';
   text-align: left;
