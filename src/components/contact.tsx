@@ -7,7 +7,7 @@ import { FaUser, FaWhatsapp, FaPaperPlane } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 
 const ContactForm = () => {
-  const { t } = useTranslation("contactForm");
+  
 
   const [formData, setFormData] = useState({
     name: "",
