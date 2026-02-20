@@ -64,7 +64,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://humbertohamportfolio.vercel.app/"
+          href="https://humbertoham.com"
         />
 
         {/* Open Graph */}
@@ -79,11 +79,11 @@ export default function RootLayout({
         />
         <meta
           property="og:url"
-          content="https://humbertohamportfolio.vercel.app/"
+          content="https://humbertoham.com"
         />
         <meta
           property="og:image"
-          content="https://humbertohamportfolio.vercel.app/images/card.png"
+          content="https://https://humbertoham.com/images/card.png"
         />
 
         {/* Twitter */}
@@ -98,7 +98,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://humbertohamportfolio.vercel.app/images/card.png"
+          content="https://humbertoham.com/images/card.png"
         />
 
         {/* Structured Data */}
@@ -110,7 +110,7 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Humberto Ham",
               "jobTitle": "Software Engineer",
-              "url": "https://humbertohamportfolio.vercel.app",
+              "url": "https://humbertoham.com",
               "sameAs": [
                 "https://github.com/humbertoham",
                 "https://www.linkedin.com/in/humbertohamd/"
