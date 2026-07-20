@@ -13,11 +13,11 @@ const Footer = () => {
                        
                         <a href="https://www.linkedin.com/in/humbertohamd/" target='blank_' className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                             <FaLinkedin className='text-xl'/>
-                            <span className="sr-only">Linkedin</span>
+                            <span className="sr-only">{t('linkedinLabel')}</span>
                         </a>
                         <a href="https://github.com/humbertoham" target='blank_' className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                             <FaGithub className='text-xl'/>
-                            <span className="sr-only">Github</span>
+                            <span className="sr-only">{t('githubLabel')}</span>
                         </a>
                        
                     </div>    
@@ -26,13 +26,13 @@ const Footer = () => {
                     <ul className="flex flex-wrap items-center py-2 text-sm font-medium text-gray-400 lg:py-0">
                         
                         <li>
-                            <Link href="/" className="hover:underline me-4 md:me-6">Home</Link>
+                            <Link href="/" className="hover:underline me-4 md:me-6">{t('home')}</Link>
                         </li>
                         <li>
-                            <Link href="/portfolio" className="hover:underline me-4 md:me-6">Portfolio</Link>
+                            <Link href="/portfolio" className="hover:underline me-4 md:me-6">{t('portfolio')}</Link>
                         </li>
                         <li>
-                            <Link href="/about" className="hover:underline me-4 md:me-6">About me</Link>
+                            <Link href="/about" className="hover:underline me-4 md:me-6">{t('about')}</Link>
                         </li>
                        
                         <li>

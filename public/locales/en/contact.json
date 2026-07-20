@@ -1,0 +1,42 @@
+{
+  "whatsapp": {
+    "heading": "Contact me on WhatsApp",
+    "description": "This form will open WhatsApp",
+    "nameLabel": "Your name",
+    "namePlaceholder": "Full name",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "submit": "Send via WhatsApp",
+    "sentTitle": "Message sent!",
+    "sentMessage": "WhatsApp has been opened. I'll reply shortly 👌",
+    "outgoingGreeting": "👋 Hi! You received a new message from your website:",
+    "outgoingName": "👤 Name",
+    "outgoingMessage": "💬 Message"
+  },
+  "legacy": {
+    "title": "Get in touch",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell me about your project..."
+      }
+    },
+    "checkbox": {
+      "label": "I accept the <1>Terms and Conditions</1> and <2>Privacy Policy</2>.",
+      "error": "You must accept the terms and privacy policy before submitting."
+    },
+    "submit": "Send message",
+    "submitted": {
+      "title": "Message sent!",
+      "message": "Thank you for getting in touch. I'll reply shortly."
+    }
+  }
+}

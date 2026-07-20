@@ -1,4 +1,6 @@
 {
-    "search":"Search projects...",
-    "notfound":"No projects were found."
+    "search": "Search projects...",
+    "notfound": "No projects were found.",
+    "projectNotFound": "Project not found",
+    "backToPortfolio": "Back to Portfolio"
 }

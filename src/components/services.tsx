@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { ServiceItem } from "./type";
 import Link from 'next/link';
-import { useTranslation } from "next-i18next";
+import { useTranslation } from 'react-i18next';
 
 interface ServicesSectionProps {
   services: ServiceItem[];

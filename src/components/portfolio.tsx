@@ -5,14 +5,7 @@ import { motion } from 'framer-motion';
 import { FiSearch, FiCode, FiX } from 'react-icons/fi';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  link?: string;
-  technologies: string[];
-}
+import type { Project } from '@/lib/projects';
 
 interface PortfolioProps {
   projects: Project[];
@@ -113,6 +106,7 @@ const Portfolio = ({ projects }: PortfolioProps) => {
               <input
                 type="text"
                 placeholder={t('search')}
+                aria-label={t('search')}
                 className="lat w-full px-6 py-4 text-lg rounded-3xl shadow-lg focus:outline-none pl-12"
                 style={{
                   backgroundColor: '#172b2d',

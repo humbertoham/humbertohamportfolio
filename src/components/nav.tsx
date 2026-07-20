@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from "next/image";
 import Link from 'next/link';
 
 export default function Nav() {
@@ -44,10 +43,10 @@ export default function Nav() {
           onClick={toggleMenu}
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-darkgreen rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
-          aria-controls="navbar-default"
+          aria-controls="mobile-navigation"
           aria-expanded={isMenuOpen}
         >
-          <span className="sr-only">Open main menu</span>
+          <span className="sr-only">{t('openMenu')}</span>
           <svg
             className="w-5 h-5"
             aria-hidden="true"
@@ -64,7 +63,7 @@ export default function Nav() {
             />
           </svg>
         </button>
-        <div className="hidden md:block md:w-auto bc" id="navbar-default">
+        <div className="hidden md:block md:w-auto bc" id="desktop-navigation">
           <ul className="font-medium navB flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
               <Link href="/" className="block py-2 px-3 navA md:p-0" aria-current="page">
@@ -93,7 +92,7 @@ export default function Nav() {
           {isMenuOpen && (
             <motion.div
               className="w-full md:hidden origin-top"
-              id="navbar-default"
+              id="mobile-navigation"
               initial="hidden"
               animate="visible"
               exit="hidden"

@@ -1,0 +1,42 @@
+{
+  "whatsapp": {
+    "heading": "Contáctame por WhatsApp",
+    "description": "Este formulario abrirá WhatsApp",
+    "nameLabel": "Tu nombre",
+    "namePlaceholder": "Nombre completo",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+    "submit": "Enviar por WhatsApp",
+    "sentTitle": "¡Mensaje enviado!",
+    "sentMessage": "WhatsApp se abrió correctamente. Te responderé en breve 👌",
+    "outgoingGreeting": "👋 ¡Hola! Recibiste un nuevo mensaje desde tu sitio web:",
+    "outgoingName": "👤 Nombre",
+    "outgoingMessage": "💬 Mensaje"
+  },
+  "legacy": {
+    "title": "Ponte en contacto",
+    "fields": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "tu@ejemplo.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Cuéntame sobre tu proyecto..."
+      }
+    },
+    "checkbox": {
+      "label": "Acepto los <1>Términos y condiciones</1> y el <2>Aviso de privacidad</2>.",
+      "error": "Debes aceptar los términos y el aviso de privacidad antes de enviar el formulario."
+    },
+    "submit": "Enviar mensaje",
+    "submitted": {
+      "title": "¡Mensaje enviado!",
+      "message": "Gracias por contactarme. Te responderé en breve."
+    }
+  }
+}

@@ -1,12 +1,12 @@
 'use client';
 import { useState } from "react";
-import { useTranslation, Trans } from "next-i18next";
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from "framer-motion";
 import { FaUser, FaEnvelope, FaRegPaperPlane } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";
 
 const ContactForm = () => {
-  const { t } = useTranslation("contactForm");
+  const { t } = useTranslation('contact');
 
   const [formData, setFormData] = useState({
     name: "",
@@ -32,7 +32,7 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!isChecked) {
-      setError(t("contactForm.form.error"));
+      setError(t('legacy.checkbox.error'));
       return;
     }
     console.log("Form submitted:", formData);
@@ -61,10 +61,10 @@ const ContactForm = () => {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              {t("contactForm.submitted.title")}
+              {t('legacy.submitted.title')}
             </motion.h2>
             <p className="text-[var(--white)] text-lg font-medium lat">
-              {t("contactForm.submitted.message")}
+              {t('legacy.submitted.message')}
             </p>
           </motion.div>
         ) : (
@@ -75,7 +75,7 @@ const ContactForm = () => {
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              {t("contactForm.form.title")}
+              {t('legacy.title')}
             </motion.h2>
             <motion.div
               className="mb-6"
@@ -88,7 +88,7 @@ const ContactForm = () => {
                 className="block text-[var(--white)] font-medium mb-2 pop"
               >
                 <FaUser className="text-[var(--white)] mr-3 inline" />
-                {t("contactForm.form.fields.name.label")}
+                {t('legacy.fields.name.label')}
               </label>
               <input
                 type="text"
@@ -96,7 +96,7 @@ const ContactForm = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder={t("contactForm.form.fields.name.placeholder")}
+                placeholder={t('legacy.fields.name.placeholder')}
                 required
                 className="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-[var(--white)] lat"
               />
@@ -112,7 +112,7 @@ const ContactForm = () => {
                 className="block text-[var(--white)] font-medium mb-2 pop"
               >
                 <FaEnvelope className="text-[var(--white)] mr-3 inline" />
-                {t("contactForm.form.fields.email.label")}
+                {t('legacy.fields.email.label')}
               </label>
               <input
                 type="email"
@@ -120,7 +120,7 @@ const ContactForm = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder={t("contactForm.form.fields.email.placeholder")}
+                placeholder={t('legacy.fields.email.placeholder')}
                 required
                 className="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-[var(--white)] lat"
               />
@@ -136,14 +136,14 @@ const ContactForm = () => {
                 className="block text-[var(--white)] font-medium mb-2 pop"
               >
                 <MdMessage className="text-[var(--white)] mr-3 inline" />
-                {t("contactForm.form.fields.message.label")}
+                {t('legacy.fields.message.label')}
               </label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder={t("contactForm.form.fields.message.placeholder")}
+                placeholder={t('legacy.fields.message.placeholder')}
                 required
                 rows={6}
                 className="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-[var(--white)] lat"
@@ -168,13 +168,13 @@ const ContactForm = () => {
       className="text-[var(--white)] font-medium lat text-left flex-1" 
     >
       <Trans
+        i18nKey="legacy.checkbox.label"
+        ns="contact"
         components={{
           1: <a href="/termsandconditions" target="_blank" className="underline hover:text-yellow" />,
           2: <a href="/privacypolicy" target="_blank" className="underline hover:text-yellow" />,
         }}
-      >
-        {t("contactForm.form.checkbox.label")}
-      </Trans>
+      />
     </label>
   </div>
   {error && <p className="text-red-500 text-center mt-2">{error}</p>}
@@ -193,7 +193,7 @@ const ContactForm = () => {
     whileTap={{ scale: 0.95 }}
   >
     <FaRegPaperPlane className="mr-2 inline" />
-    {t("contactForm.button.submit")}
+    {t('legacy.submit')}
   </motion.button>
 </div>
           </>

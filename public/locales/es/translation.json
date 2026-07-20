@@ -1,0 +1,33 @@
+{
+  "vision": "CONSTRUIDO COMO",
+  "code": "PIENSO.",
+  "home": "Inicio",
+  "services": "Servicios",
+  "portfolio": "Portafolio",
+  "about": "Acerca de mí",
+  "contact": "Contacto",
+  "learn": "Portafolio",
+  "privacy": "Aviso de privacidad",
+  "terms": "Términos y condiciones",
+  "licen": "Licencias",
+  "legal": "Términos legales",
+  "title": "¡Creemos algo juntos!",
+  "description": "¿Listo para hacer realidad tu visión? Colaboremos en algo extraordinario que responda a tus objetivos particulares.",
+  "buttonText": "Contáctame",
+  "all": "Todos los derechos reservados.",
+  "our": "Áreas de experiencia",
+  "openMenu": "Abrir menú principal",
+  "heroImageAlt": "Ilustración que representa la ingeniería de software y el diseño de sistemas",
+  "logoAlt": "Logotipo de Humberto Ham",
+  "linkedinLabel": "Humberto Ham en LinkedIn",
+  "githubLabel": "Humberto Ham en GitHub",
+  "metadata": {
+    "title": "Humberto Ham — Ingeniero de software y matemático",
+    "description": "Ingeniero de software con una sólida formación en matemáticas, ingeniería de software y diseño de sistemas. Enfocado en construir soluciones confiables, escalables y cuidadosamente estructuradas.",
+    "keywords": "Humberto Ham, Ingeniero de software, Matemático, Diseño de sistemas, Desarrollo web, Automatización",
+    "openGraphDescription": "Mi trabajo parte de una sólida formación en matemáticas, ingeniería de software y un profundo entendimiento de los sistemas.",
+    "twitterDescription": "Construyo software escalable, mantenible y lógicamente sólido mediante la precisión y el pensamiento sistémico.",
+    "jobTitle": "Ingeniero de software",
+    "structuredDescription": "Ingeniero de software con una sólida formación en matemáticas y diseño de sistemas, enfocado en la confiabilidad a largo plazo y la claridad del software."
+  }
+}

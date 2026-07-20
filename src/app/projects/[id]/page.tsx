@@ -1,19 +1,21 @@
 'use client'
-import { Project } from '@/components/portfolio';
-import projectsData from '../../../../public/locales/en/projects.json'; // Your JSON data
 import { FiArrowLeft } from 'react-icons/fi';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import CTAComponent from '@/components/cta';
+import { getProjects } from '@/lib/projects';
 
 export default function ProjectPage({ params }: { params: { id: string } }) {
-  const project = (projectsData as Project[]).find(p => p.id === params.id);
+  const { t, i18n } = useTranslation('portfolio');
+  const project = getProjects(i18n.resolvedLanguage || i18n.language)
+    .find(p => p.id === params.id);
 
   if (!project) {
     return (
       <section className="min-h-screen py-10" style={{ backgroundColor: '#e9ffdb' }}>
         <div className="container mx-auto px-4">
           <h2 className="pop text-3xl text-center" style={{ color: '#172b2d' }}>
-            Project not found
+            {t('projectNotFound')}
           </h2>
         </div>
       </section>
@@ -29,7 +31,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           style={{ color: '#004643' }}
         >
           <FiArrowLeft className="mr-2" />
-          Back to Portfolio
+          {t('backToPortfolio')}
         </Link>
 
         <div className="rounded-2xl shadow-xl overflow-hidden" style={{ backgroundColor: '#faf4d3' }}>
@@ -46,7 +48,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2">
-              {project.technologies.map((tech:any) => (
+              {project.technologies.map((tech) => (
                 <span
                   key={tech}
                   className="lat px-3 py-1.5 text-sm font-medium rounded-full"

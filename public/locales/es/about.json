@@ -1,0 +1,14 @@
+{
+  "banner": {
+    "heading": {
+      "line1": "Acerca de",
+      "line2": "mí"
+    },
+    "content": {
+      "intro": "Mi trabajo parte de una sólida formación en matemáticas, ingeniería de software y una curiosidad constante por comprender cómo funcionan realmente los sistemas. Mucho antes de asumir puestos o títulos formales, desarrollé mis habilidades mediante años de resolución práctica de problemas, programación y aprendizaje independiente.",
+      "paragraph1": "A lo largo de mi experiencia, observé un patrón recurrente en la industria: las soluciones que priorizan la velocidad por encima del entendimiento suelen producir sistemas frágiles y deuda técnica. Esta perspectiva definió mi enfoque del software, en el que favorezco la claridad, la estructura y la confiabilidad a largo plazo por encima de las soluciones rápidas.",
+      "paragraph2": "Con formación en matemáticas y amplia experiencia en desarrollo web moderno, automatización y diseño de sistemas, combino el pensamiento analítico con la ejecución práctica. Me enfoco en construir soluciones que no solo sean funcionales, sino también lógicamente sólidas, mantenibles y cuidadosamente diseñadas.",
+      "paragraph3": "Abordo cada proyecto con precisión, responsabilidad y un impulso constante por mejorar. Mi objetivo es comprender a fondo el problema y entregar soluciones eficientes, escalables y duraderas, siempre equilibrando el rigor técnico con el impacto en el mundo real."
+    }
+  }
+}

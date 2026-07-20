@@ -5,6 +5,12 @@ import enTranslations from '../public/locales/en/translation.json';
 import enErrors from '../public/locales/en/errors.json';
 import enPortfolio from '../public/locales/en/portfolio.json';
 import enAbout from '../public/locales/en/about.json';
+import enContact from '../public/locales/en/contact.json';
+import esTranslations from '../public/locales/es/translation.json';
+import esErrors from '../public/locales/es/errors.json';
+import esPortfolio from '../public/locales/es/portfolio.json';
+import esAbout from '../public/locales/es/about.json';
+import esContact from '../public/locales/es/contact.json';
 
 const resources = {
   en: {
@@ -12,6 +18,14 @@ const resources = {
     errors: enErrors,
     portfolio: enPortfolio,
     about: enAbout,
+    contact: enContact,
+  },
+  es: {
+    translation: esTranslations,
+    errors: esErrors,
+    portfolio: esPortfolio,
+    about: esAbout,
+    contact: esContact,
   },
 };
 
@@ -19,13 +33,16 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en',          // idioma fijo por defecto
+    lng: 'en',
     fallbackLng: 'en',
+    supportedLngs: ['en', 'es'],
+    load: 'languageOnly',
     ns: [
       'translation',
       'errors',
       'portfolio',
       'about',
+      'contact',
     ],
     defaultNS: 'translation',
     debug: false,

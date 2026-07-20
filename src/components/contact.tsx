@@ -1,50 +1,45 @@
 'use client';
 
-import { useState } from "react";
-import { useTranslation } from "next-i18next";
-import { motion } from "framer-motion";
-import { FaUser, FaWhatsapp, FaPaperPlane } from "react-icons/fa";
-import { MdMessage } from "react-icons/md";
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { FaUser, FaWhatsapp } from 'react-icons/fa';
+import { MdMessage } from 'react-icons/md';
 
 const ContactForm = () => {
-  
-
+  const { t } = useTranslation('contact');
   const [formData, setFormData] = useState({
-    name: "",
-    message: "",
+    name: '',
+    message: '',
   });
-
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
+    const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
 
-    const phoneNumber = "8992113924";
-
-    const whatsappMessage = `
-👋 Hi! You received a new message from your website:
-
-👤 Name: ${formData.name}
-💬 Message:
-${formData.message}
-    `.trim();
-
-    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const phoneNumber = '8992113924';
+    const whatsappMessage = [
+      t('whatsapp.outgoingGreeting'),
+      '',
+      `${t('whatsapp.outgoingName')}: ${formData.name}`,
+      `${t('whatsapp.outgoingMessage')}:`,
+      formData.message,
+    ].join('\n');
 
     window.open(
-      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-      "_blank"
+      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+      '_blank'
     );
 
     setIsSubmitted(true);
-    setFormData({ name: "", message: "" });
+    setFormData({ name: '', message: '' });
   };
 
   return (
@@ -59,58 +54,57 @@ ${formData.message}
           <div className="text-center text-white">
             <FaWhatsapp className="mx-auto text-5xl text-green-400 mb-4" />
             <h2 className="text-3xl font-bold pop mb-4">
-              Message sent!
+              {t('whatsapp.sentTitle')}
             </h2>
             <p className="lat opacity-90">
-              WhatsApp has been opened. I’ll reply shortly 👌
+              {t('whatsapp.sentMessage')}
             </p>
           </div>
         ) : (
           <>
             <h2 className="text-white text-3xl font-bold mb-2 text-center pop">
-              Contact me on WhatsApp
+              {t('whatsapp.heading')}
             </h2>
 
             <p className="text-white/80 text-center mb-8 lat flex items-center justify-center gap-2">
               <FaWhatsapp className="text-green-400" />
-              This form will open WhatsApp
+              {t('whatsapp.description')}
             </p>
 
-            {/* Name */}
             <div className="mb-6">
-              <label className="text-white pop block mb-2">
+              <label htmlFor="name" className="text-white pop block mb-2">
                 <FaUser className="inline mr-2 text-yellow" />
-                Your name
+                {t('whatsapp.nameLabel')}
               </label>
               <input
                 type="text"
+                id="name"
                 name="name"
                 required
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="John Doe"
+                placeholder={t('whatsapp.namePlaceholder')}
                 className="w-full px-4 py-3 rounded-lg bgw"
               />
             </div>
 
-            {/* Message */}
             <div className="mb-8">
-              <label className="text-white pop block mb-2">
+              <label htmlFor="message" className="text-white pop block mb-2">
                 <MdMessage className="inline mr-2 text-yellow" />
-                Message
+                {t('whatsapp.messageLabel')}
               </label>
               <textarea
+                id="message"
                 name="message"
                 rows={5}
                 required
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Tell me about your project..."
+                placeholder={t('whatsapp.messagePlaceholder')}
                 className="w-full px-4 py-3 rounded-lg bgw"
               />
             </div>
 
-            {/* Button */}
             <div className="flex justify-center">
               <motion.button
                 type="submit"
@@ -119,7 +113,7 @@ ${formData.message}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaWhatsapp className="text-2xl" />
-                Send via WhatsApp
+                {t('whatsapp.submit')}
               </motion.button>
             </div>
           </>

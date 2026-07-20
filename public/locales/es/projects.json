@@ -1,0 +1,98 @@
+[
+  {
+    "id": "12",
+    "title": "kraussindustrial.com",
+    "description": "Desarrollé un sitio web responsivo y orientado a productos para Krauss Machinery que presenta su maquinaria industrial y de construcción mediante información clara, llamados a solicitar cotización y una sección accesible de preguntas frecuentes. La experiencia ayuda a las empresas a explorar montacargas, plataformas elevadoras y maquinaria relacionada, además de conectarlas con el equipo para recibir asesoría especializada.",
+    "image": "./images/projects/krauss.png",
+    "link": "https://kraussindustrial.com/",
+    "technologies": ["Next.js", "TailwindCSS"]
+  },
+  {
+    "id": "1",
+    "title": "wavestudio.mx",
+    "description": "Diseñé y desarrollé una plataforma completa de comercio electrónico y reservaciones que combina tecnología y bienestar. El sistema permite a los usuarios registrarse, reservar y comprar sesiones de entrenamiento —desde yoga y pilates hasta HIIT— mediante una integración segura con la API de Mercado Pago. Implementé autenticación basada en JWT, una estructura de base de datos escalable y efectos de movimiento fluidos para ofrecer un ecosistema de acondicionamiento físico dinámico, intuitivo y confiable, alineado con la filosofía de equilibrio y rendimiento de Wave Studio.",
+    "image": "./images/projects/wave.png",
+    "link": "https://wavestudio.mx",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion", "JWT", "APIs"]
+  },
+  {
+    "id": "2",
+    "title": "lovell-ignitethegame.com",
+    "description": "Desarrollé un sitio web visualmente refinado para comunicar la experiencia de Lovell Ignite The Game en la fabricación, instalación y mantenimiento de canchas deportivas de alta calidad. La plataforma destaca su cobertura nacional, garantías a largo plazo y trabajo de precisión mediante una interfaz limpia y optimizada para el rendimiento que refuerza la confianza, la fiabilidad y la credibilidad profesional.",
+    "image": "./images/projects/lovell.png",
+    "link": "https://www.lovell-ignitethegame.com/",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  },
+  {
+    "id": "3",
+    "title": "animalijos.com",
+    "description": "Diseñé y construí una plataforma digital elegante para profesionales veterinarios y dueños de mascotas, centrada en un catálogo de productos moderno y elementos visuales coherentes con la marca. El sitio presenta productos de alta calidad para mascotas —desde alimentos especializados hasta accesorios de cuidado— mediante un diseño centrado en el usuario que mejora la usabilidad, el profesionalismo y la confianza dentro de la industria del cuidado animal.",
+    "image": "./images/projects/animalijos.png",
+    "link": "https://animalijos.com",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  },
+  {
+    "id": "4",
+    "title": "Aplicaciones web personalizadas para servicios de ambulancias",
+    "description": "Desarrollé un conjunto de aplicaciones web para agilizar la recopilación de datos en servicios de ambulancias. Estas herramientas permiten a los paramédicos completar formularios digitales detallados que generan automáticamente documentos PDF personalizados con firmas digitales. Al combinar interfaces responsivas, validación de formularios y generación automatizada de documentos, mejoré significativamente la eficiencia operativa y la precisión de la documentación.",
+    "image": "",
+    "link": "",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  },
+  {
+    "id": "5",
+    "title": "larqinteriors.com",
+    "description": "Construí un sitio web elegante y optimizado para dispositivos móviles para que LARQ Interiors mostrara sus capacidades integrales de arquitectura y diseño de interiores. La plataforma destaca renovaciones, planos conformes con la normativa, fachadas personalizadas, diseño de interiores, visualizaciones 3D inmersivas y gestión integral de proyectos mediante una presentación pulida y altamente visual.",
+    "image": "./images/projects/larq.png",
+    "link": "https://larqinteriordesign.vercel.app/",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  },
+  {
+    "id": "6",
+    "title": "ambulanciastvr.com",
+    "description": "Desarrollé un sitio web informativo y optimizado para dispositivos móviles para AmbulanciasTVR, diseñado para comunicar con claridad servicios críticos de emergencia. La interfaz prioriza la accesibilidad, la claridad y la confianza, mejorando la comunicación con los usuarios al mismo tiempo que fortalece la presencia digital de la empresa y la captación de clientes.",
+    "image": "./images/projects/ambulancias.png",
+    "link": "https://ambulanciastvrv2.vercel.app/",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  },
+  {
+    "id": "7",
+    "title": "patriciorosado.com",
+    "description": "Creé un portafolio digital sofisticado para el fotógrafo Patricio Rosado, combinando una presentación visual impactante con una navegación intuitiva. La plataforma está diseñada para captar la atención, mostrar eficazmente el trabajo artístico y convertir a los visitantes en clientes potenciales mediante una experiencia en línea refinada y profesional.",
+    "image": "./images/projects/patricio.png",
+    "link": "https://patriciorosado.vercel.app/",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  },
+  {
+    "id": "8",
+    "title": "Sistema de despacho y rastreo de ambulancias en tiempo real",
+    "description": "Desarrollé una aplicación web de despacho de ambulancias en tiempo real que permite a los administradores asignar emergencias a unidades específicas y a las tripulaciones recibir notificaciones en vivo, consultar la ubicación de las emergencias en un mapa interactivo y navegar mediante rutas en tiempo real. El sistema incluye autenticación basada en roles, actualizaciones de estado en vivo, rastreo por geolocalización y uso optimizado de mapas para reducir costos operativos, garantizando una coordinación confiable y una respuesta rápida en situaciones de emergencia.",
+    "image": "",
+    "link": "",
+    "technologies": ["Next.js", "TypeScript", "Firebase", "Google Maps API", "TailwindCSS"]
+  },
+  {
+    "id": "9",
+    "title": "Contador vehicular",
+    "description": "Construí un sistema avanzado de monitoreo vehicular que utiliza visión por computadora para detectar, clasificar y analizar el tránsito según el tipo y tamaño de los vehículos. El sistema admite escenarios de gestión vial y de peajes mediante la generación de reportes analíticos detallados basados en modelos estadísticos, lo que permite tomar decisiones sustentadas en datos y optimizar rutas.",
+    "image": "",
+    "link": "",
+    "technologies": ["Python", "OpenCV", "TensorFlow", "PyTorch"]
+  },
+  {
+    "id": "10",
+    "title": "Programa de análisis estadístico con generación de reportes PDF",
+    "description": "Desarrollé una aplicación de Windows Forms en C# que realiza análisis estadísticos avanzados sobre datos empresariales, incluidas métricas como media, mediana y desviación estándar. El sistema genera reportes PDF estructurados y profesionales mediante iTextSharp, facilitando la toma de decisiones corporativas basada en datos.",
+    "image": "",
+    "link": "",
+    "technologies": ["C#", "Windows Forms"]
+  },
+  {
+    "id": "11",
+    "title": "lahormiga.mx",
+    "description": "Desarrollé la plataforma digital de La Hormiga, una marca enfocada en botanas, elotes y helados. El sitio web combina un diseño responsivo con interacciones dinámicas para mejorar la participación de los usuarios, fortalecer la identidad de marca y convertir visitantes en clientes.",
+    "image": "./images/projects/lahormiga.png",
+    "link": "https://lahormiga.mx",
+    "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
+  }
+]

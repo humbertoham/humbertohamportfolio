@@ -17,7 +17,7 @@ export default function Banner() {
         <img 
           src='./images/herosection.svg' 
           className=" h-60 md:h-3/4  lg:h-3/4 xl:w-[700px]  max-w-full"
-          alt="Hero Section"
+          alt={t('heroImageAlt')}
         />
         <Link href='/portfolio' className='pl-4 learn block mt-2' >{t('learn')} <IoIosArrowForward className='inline'/> </Link>
       </div>

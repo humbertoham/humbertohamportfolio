@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import Link from 'next/link';
 
 const CTAComponent = () => {
-  const { t } = useTranslation('');
+  const { t } = useTranslation();
 
   return (
     <section className="relative py-20 px-4 bg-[var(--menta)]">

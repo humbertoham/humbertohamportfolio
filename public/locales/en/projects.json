@@ -1,5 +1,13 @@
 [
   {
+    "id": "12",
+    "title": "kraussindustrial.com",
+    "description": "I developed a responsive, product-focused website for Krauss Machinery that presents its industrial and construction equipment through clear product highlights, quotation calls to action, and an accessible FAQ. The experience helps companies explore forklifts, lifting platforms, and related machinery while connecting with the team for specialized guidance.",
+    "image": "./images/projects/krauss.png",
+    "link": "https://kraussindustrial.com/",
+    "technologies": ["Next.js", "TailwindCSS"]
+  },
+  {
     "id": "1",
     "title": "wavestudio.mx",
     "description": "I designed and developed a full e-commerce and booking platform that merges technology with wellness. The system allows users to register, book, and purchase training sessions—ranging from yoga and pilates to HIIT—through a secure integration with Mercado Pago’s API. I implemented JWT-based authentication, a scalable database structure, and fluid motion effects to deliver a dynamic, intuitive, and reliable fitness ecosystem aligned with Wave Studio’s philosophy of balance and performance.",
@@ -36,7 +44,7 @@
     "title": "larqinteriors.com",
     "description": "I built a sleek, mobile-first website for LARQ Interiors to showcase its full-service architectural and interior design capabilities. The platform highlights renovations, code-compliant blueprints, custom facades, interior design, immersive 3D renderings, and end-to-end project management through a polished and highly visual presentation.",
     "image": "./images/projects/larq.png",
-    "link": "https://larqinteriors.com",
+    "link": "https://larqinteriordesign.vercel.app/",
     "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
   },
   {
@@ -44,7 +52,7 @@
     "title": "ambulanciastvr.com",
     "description": "I developed an informative and mobile-optimized website for AmbulanciasTVR, designed to clearly communicate critical emergency services. The interface prioritizes accessibility, clarity, and trust, improving user communication while strengthening the company’s digital presence and customer acquisition.",
     "image": "./images/projects/ambulancias.png",
-    "link": "https://ambulanciastvr.com",
+    "link": "https://ambulanciastvrv2.vercel.app/",
     "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
   },
   {
@@ -52,7 +60,7 @@
     "title": "patriciorosado.com",
     "description": "I created a sophisticated digital portfolio for photographer Patricio Rosado, combining striking visual presentation with intuitive navigation. The platform is designed to capture attention, showcase artistic work effectively, and convert visitors into potential clients through a refined and professional online experience.",
     "image": "./images/projects/patricio.png",
-    "link": "https://patriciorosado.com",
+    "link": "https://patriciorosado.vercel.app/",
     "technologies": ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"]
   },
   {
